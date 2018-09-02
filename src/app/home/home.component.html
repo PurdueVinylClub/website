@@ -1,0 +1,70 @@
+<div class="home">
+  <div class="row">
+    <div class="col col-md-4"></div>
+    <div class="col col-md-4 greeting">
+      <h2>Purdue University's premiere community for music lovers of all types</h2>
+    </div>
+    <div class="col col-md-4"></div>
+  </div>
+  <div class="container row calendar" id="calendar">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <h2>Events and Meetings</h2>
+        <hr />
+      <ng-fullcalendar #calendar 
+        [options]="calendarOptions" 
+        (eventClick)="eventClick($event.detail)" 
+        (eventDrop)="updateEvent($event.detail)"
+        (eventResize)="updateEvent($event.detail)" 
+        (clickButton)="clickButton($event.detail)"></ng-fullcalendar>
+    </div>
+  </div>
+  <div class="container row officers">
+    <div class="col-md-12">
+      <h2>Meet the Leadership</h2>
+      <hr />
+      <div class="officer">
+        <img class="officer-img" src="../../assets/officers/jake.png">
+        <div class="officer-info">
+          <h4>Jake Patterson</h4>
+          <h5>President</h5>
+          <p><a href=""><i class="fas fa-compact-disc"></i> Discogs</a> • <a href=""><i class="fab fa-twitter"></i> Twitter</a> • <a href=""><i class="fas fa-envelope"></i> Email</a></p>
+        </div>
+      </div>
+      <div class="officer">
+        <img class="officer-img" src="../../assets/officers/joey.png">
+        <div class="officer-info">
+          <h4>Joey Riina</h4>
+          <h5>Vice President</h5>
+          <p><a href=""><i class="fas fa-compact-disc"></i> Discogs</a> • <a href=""><i class="fab fa-twitter"></i> Twitter</a> • <a href=""><i class="fas fa-envelope"></i> Email</a></p>
+        </div>
+      </div>
+      <div class="officer">
+        <img class="officer-img" src="../../assets/officers/EMMA.png">
+        <div class="officer-info">
+          <h4>Emma Alexander</h4>
+          <h5>Treasurer</h5>
+          <p><a href=""><i class="fas fa-compact-disc"></i> Discogs</a> • <a href=""><i class="fab fa-twitter"></i> Twitter</a> • <a href=""><i class="fas fa-envelope"></i> Email</a></p>
+        </div>
+      </div>
+      <div class="officer">
+        <img class="officer-img" src="../../assets/officers/emery.png">
+        <div class="officer-info">
+          <h4>Emery Horvath</h4>
+          <h5>Curator</h5>
+          <p><a href=""><i class="fas fa-compact-disc"></i> Discogs</a> • <a href=""><i class="fab fa-twitter"></i> Twitter</a> • <a href=""><i class="fas fa-envelope"></i> Email</a></p>
+        </div>
+      </div>    
+    </div>
+  </div>
+  <!--<div class="container row meetings">
+    <div class="col-md-12">
+      <h2>Join us for meetings!</h2>
+      <hr />
+      <img src="" class="group-img">
+      <h5 class="check-us-out">Check our <a href="">calendar for meeting and event times.</a></h5>
+    </div>
+  </div>-->
+</div>
+<footer></footer>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">

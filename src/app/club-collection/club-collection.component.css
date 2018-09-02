@@ -1,0 +1,20 @@
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 25px;
+}
+
+.records {
+    margin-bottom: 50px;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    margin: 2px;
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+img:hover {
+    transform: scale(1.25);
+}

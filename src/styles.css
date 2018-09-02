@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+.primary-color {
+	background-color: yellow;
+}
+
+.secondary-color {
+	background-color: salmon;
+}
+
+.third-color {
+	background-color: green;
+}
+
+.primary-text-color {
+	color: black;
+}
+
+.muted-text-color {
+	color: grey;
+}

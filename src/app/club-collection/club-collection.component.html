@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="title">
+    <h3>Club Record Collection</h3>
+  </div>
+  <div class="records" *ngIf="clubCollection">
+    <a *ngFor="let record of clubCollection.releases" 
+        href="https://discogs.com/release/{{ record.id }}">
+      <img src="{{ record.basic_information.cover_image }}" 
+      title="{{ record.basic_information.title }} - {{ record.basic_information.artists[0].name }}">
+    </a>
+  </div>
+</div>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
