@@ -9,11 +9,13 @@
   <div class="container row calendar" id="calendar">
     <div class="col-md-1"></div>
     <div class="col-md-10">
-        <h2>Events and Meetings</h2>
         <hr />
       <ng-fullcalendar #calendar 
         [options]="calendarOptions" 
-        ></ng-fullcalendar>
+        (eventClick)="eventClick($event.detail)" 
+        (eventDrop)="updateEvent($event.detail)"
+        (eventResize)="updateEvent($event.detail)" 
+        (clickButton)="clickButton($event.detail)"></ng-fullcalendar>
     </div>
   </div>
   <div class="container row officers">
@@ -25,7 +27,7 @@
         <div class="officer-info">
           <h4>Jake Patterson</h4>
           <h5>President</h5>
-          <p><a href=""><i class="fas fa-compact-disc"></i> Discogs</a> • <a href=""><i class="fab fa-twitter"></i> Twitter</a> • <a href=""><i class="fas fa-envelope"></i> Email</a></p>
+          <p><a href="https://www.discogs.com/user/jpat27/collection"><i class="fas fa-compact-disc"></i> Discogs</a> • <a href="mailto:patte107@purdue.edu"><i class="fas fa-envelope"></i> Email</a></p>
         </div>
       </div>
       <div class="officer">
@@ -33,7 +35,7 @@
         <div class="officer-info">
           <h4>Joey Riina</h4>
           <h5>Vice President</h5>
-          <p><a href=""><i class="fas fa-compact-disc"></i> Discogs</a> • <a href=""><i class="fab fa-twitter"></i> Twitter</a> • <a href=""><i class="fas fa-envelope"></i> Email</a></p>
+          <p><a href="twitter.com/crimson2877"><i class="fab fa-twitter"></i> Twitter</a> • <a href="mailto:jriina@purdue.edu"><i class="fas fa-envelope"></i> Email</a></p>
         </div>
       </div>
       <div class="officer">
@@ -41,7 +43,7 @@
         <div class="officer-info">
           <h4>Emma Alexander</h4>
           <h5>Treasurer</h5>
-          <p><a href=""><i class="fas fa-compact-disc"></i> Discogs</a> • <a href=""><i class="fab fa-twitter"></i> Twitter</a> • <a href=""><i class="fas fa-envelope"></i> Email</a></p>
+          <p><a href="https://www.discogs.com/user/emmaalexanderr/collection"><i class="fas fa-compact-disc"></i> Discogs</a> • <a href="twitter.com/emmaalexanderr"><i class="fab fa-twitter"></i> Twitter</a> • <a href="mailto:alexa154@purdue.edu"><i class="fas fa-envelope"></i> Email</a></p>
         </div>
       </div>
       <div class="officer">
@@ -49,7 +51,7 @@
         <div class="officer-info">
           <h4>Emery Horvath</h4>
           <h5>Curator</h5>
-          <p><a href=""><i class="fas fa-compact-disc"></i> Discogs</a> • <a href=""><i class="fab fa-twitter"></i> Twitter</a> • <a href=""><i class="fas fa-envelope"></i> Email</a></p>
+          <p><a href="https://www.discogs.com/user/ezhorvath7/collection"><i class="fas fa-compact-disc"></i> Discogs</a> • <a href="mailto:horvathe@purdue.edu"><i class="fas fa-envelope"></i> Email</a></p>
         </div>
       </div>    
     </div>
@@ -64,4 +66,5 @@
   </div>-->
 </div>
 <footer></footer>
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">

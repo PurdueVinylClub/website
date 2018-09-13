@@ -17,7 +17,7 @@ const appRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'club-collection', component: ClubCollectionComponent},
-  //{ path: 'rotm-archive', component: RecordOfTheMonthCollectionComponent },
+  { path: 'rotm-archive', component: RotmArchiveComponent },
 ]
 
 @NgModule({

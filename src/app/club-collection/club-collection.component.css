@@ -1,10 +1,18 @@
 h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 25px;
+}
+
+.description {
+    font-size: 14px;
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 40px;
 }
 
 .records {
     margin-bottom: 50px;
+    margin-left: 30px;
 }
 
 img {

@@ -1,3 +1,11 @@
 .navbar-brand {
     font-size: 32px;
 }
+
+.navbar {
+    font-family: 'Poppins', sans-serif;
+}
+
+.gold {
+    color: goldenrod;
+}
