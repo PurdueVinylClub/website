@@ -1,6 +1,12 @@
+.main {
+    float: none;
+    margin: 0 auto;
+}
+
 .winner-spot {
-    margin-bottom: 250px;
     font-family: 'Poppins', sans-serif;
+    float: none;
+    margin: 0 auto 50px 0;
 }
 
 .description {
@@ -10,25 +16,28 @@
     margin-top: 25px;
 }
 
-.first {
-    margin-top: 50px;
-}
-
-.not-first {
-    margin-top: 250px;
-}
-
-.third {
-    margin-top: 175px;
-    margin-bottom: 400px;
-}
-
 .text {
-    float: left;
     margin-top: 50px;
+}
+
+.text-left {
+    margin-right: 200px;
+    margin-left: 150px;
+}
+
+.text-right {
+    margin-left: 200px;
 }
 
 img {
     max-width: 180px;
-    float: right;
+    max-height: 180px;
+}
+
+.img-left {
+    margin-left: 150px;
+}
+
+.img-right {
+    margin-right: 150px;
 }
