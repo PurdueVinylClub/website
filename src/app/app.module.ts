@@ -18,6 +18,7 @@ const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'club-collection', component: ClubCollectionComponent},
   { path: 'rotm-archive', component: RotmArchiveComponent },
+  { path: 'secret-santa', component: HomeComponent },
 ]
 
 @NgModule({
