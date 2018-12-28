@@ -43,3 +43,4 @@ deploy.sh
 
 # This MUST be on the last line, do not remove or comment this out
 # for deployment stuff.
+credentials.ts
