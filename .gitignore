@@ -40,4 +40,7 @@ Thumbs.db
 
 # PVC Stuff.
 deploy.sh
-credentials.js
+
+# This MUST be on the last line, do not remove or comment this out
+# for deployment stuff.
+credentials.ts

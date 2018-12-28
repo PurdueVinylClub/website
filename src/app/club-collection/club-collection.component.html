@@ -10,7 +10,7 @@
   <br />
   <div class="records" *ngIf="clubCollection">
     <div class="wrapper">
-      <a *ngFor="let record of clubCollection.releases" 
+      <a *ngFor="let record of clubCollection.releases " 
           href="https://discogs.com/release/{{ record.id }}">
         <img src="{{ record.basic_information.cover_image }}" 
         title="{{ record.basic_information.title }} - {{ record.basic_information.artists[0].name }}">
